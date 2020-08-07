@@ -1,0 +1,33 @@
+
+[1mFrom:[0m /home/stevenobadiah/ruby/chess/lib/chess3.rb:559 Game#castling?:
+
+    [1;34m558[0m: [32mdef[0m [1;34mcastling?[0m(piece, new_x_cord, new_y_cord)
+ => [1;34m559[0m:     binding.pry
+    [1;34m560[0m:     pieces = player.pieces
+    [1;34m561[0m:     [32mif[0m piece.symbol == [31m[1;31m"[0m[31m[1;35m\u[0m[31m265A[1;31m"[0m[31m[0m
+    [1;34m562[0m:         [32mif[0m new_x_cord == [1;34m7[0m
+    [1;34m563[0m:             rook = [1;36mself[0m.find(pieces, [1;34m8[0m, [1;34m1[0m)
+    [1;34m564[0m:             [1;34;4mBoard[0m.find([1;34m8[0m, [1;34m1[0m).value = [31m[1;31m"[0m[31m-[1;31m"[0m[31m[0m
+    [1;34m565[0m:             rook.x_cord = [1;34m6[0m
+    [1;34m566[0m:             [1;34;4mBoard[0m.find([1;34m6[0m, [1;34m1[0m).value = rook.symbol
+    [1;34m567[0m:         [32melsif[0m new_x_cord == [1;34m3[0m
+    [1;34m568[0m:             rook = [1;36mself[0m.find(pieces, [1;34m1[0m, [1;34m1[0m)
+    [1;34m569[0m:             [1;34;4mBoard[0m.find([1;34m1[0m, [1;34m1[0m).value = [31m[1;31m"[0m[31m-[1;31m"[0m[31m[0m
+    [1;34m570[0m:             rook.x_cord = [1;34m4[0m
+    [1;34m571[0m:             [1;34;4mBoard[0m.find([1;34m4[0m, [1;34m1[0m).value = rook.symbol
+    [1;34m572[0m:         [32mend[0m
+    [1;34m573[0m:     [32melsif[0m piece.symbol == [31m[1;31m"[0m[31m[1;35m\u[0m[31m2654[1;31m"[0m[31m[0m
+    [1;34m574[0m:         [32mif[0m new_x_cord == [1;34m7[0m
+    [1;34m575[0m:             rook = [1;36mself[0m.find(pieces, [1;34m8[0m, [1;34m8[0m)
+    [1;34m576[0m:             [1;34;4mBoard[0m.find([1;34m8[0m, [1;34m8[0m).value = [31m[1;31m"[0m[31m-[1;31m"[0m[31m[0m
+    [1;34m577[0m:             rook.x_cord = [1;34m6[0m
+    [1;34m578[0m:             [1;34;4mBoard[0m.find([1;34m6[0m, [1;34m8[0m).value = rook.symbol
+    [1;34m579[0m:         [32melsif[0m new_x_cord == [1;34m3[0m
+    [1;34m580[0m:             rook = [1;36mself[0m.find(pieces, [1;34m1[0m, [1;34m8[0m)
+    [1;34m581[0m:             [1;34;4mBoard[0m.find([1;34m1[0m, [1;34m8[0m).value = [31m[1;31m"[0m[31m-[1;31m"[0m[31m[0m
+    [1;34m582[0m:             rook.x_cord = [1;34m4[0m
+    [1;34m583[0m:             [1;34;4mBoard[0m.find([1;34m4[0m, [1;34m8[0m).value = rook.symbol
+    [1;34m584[0m:         [32mend[0m
+    [1;34m585[0m:     [32mend[0m      
+    [1;34m586[0m: [32mend[0m
+

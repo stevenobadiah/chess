@@ -1,0 +1,30 @@
+
+[1mFrom:[0m /home/stevenobadiah/ruby/chess/lib/chess3.rb:655 Game#check_incheck:
+
+    [1;34m641[0m: [32mdef[0m [1;34mcheck_incheck[0m(attacker, defender)
+    [1;34m642[0m:     pieces = attacker.pieces
+    [1;34m643[0m:     other_pieces = defender.pieces
+    [1;34m644[0m:     num_in_check = [1;34m0[0m
+    [1;34m645[0m: 
+    [1;34m646[0m:     king = [1;36mnil[0m
+    [1;34m647[0m:     other_pieces.each [32mdo[0m |piece|
+    [1;34m648[0m:         [32mif[0m piece.type == [31m[1;31m'[0m[31mking[1;31m'[0m[31m[0m
+    [1;34m649[0m:             king = piece
+    [1;34m650[0m:         [32mend[0m
+    [1;34m651[0m:     [32mend[0m
+    [1;34m652[0m: 
+    [1;34m653[0m:     pieces.each [32mdo[0m |piece|
+    [1;34m654[0m:         piece.valid_moves_check(piece.x_cord, piece.y_cord)
+ => [1;34m655[0m:         binding.pry
+    [1;34m656[0m:         [32mif[0m piece.valid_moves.include? [king.x_cord, king.y_cord]
+    [1;34m657[0m:             num_in_check += [1;34m1[0m
+    [1;34m658[0m:         [32mend[0m
+    [1;34m659[0m:     [32mend[0m
+    [1;34m660[0m: 
+    [1;34m661[0m:     [32mif[0m num_in_check > [1;34m0[0m
+    [1;34m662[0m:         [32mreturn[0m [1;36mtrue[0m
+    [1;34m663[0m:     [32melse[0m
+    [1;34m664[0m:         [32mreturn[0m [1;36mfalse[0m
+    [1;34m665[0m:     [32mend[0m
+    [1;34m666[0m: [32mend[0m
+
